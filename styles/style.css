@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #1F1F1F;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* ---------------------------------------------------------- */
+
+/* DIVS GENERICAS ------------------------------------------- */
+
+.center {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+/* ---------------------------------------------------------- */
+
+/* HEADER --------------------------------------------------- */
+
+header {
+    background-color: #2F2F2F;
+    padding: 15px 4%;
+}
+
+.logo {
+    width: 160px;
+    height: 100px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo:nth-child(1) {
+    float: left;
+    background-image: url("../images/wcc_logo_white.png.webp");
+}
+
+.logo:nth-child(2) {
+    float: right;
+    background-image: url("../images/great-nonprofits-2021TRbadge-lg.png");
+    background-size: 80% auto;
+}
+
+/* ---------------------------------------------------------- */
+
+/* BANNER --------------------------------------------------- */
+
+.cover-form {
+    width: 100%;
+    background-color: #1f1f1f;
+}
+
+.cover-form .center {
+    position: relative;
+    background-image: url("../images/wolf-banner2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 100%;
+    height: 560px;
+}
+
+/* ---------------------------------------------------------- */
+
+/* FORM ----------------------------------------------------- */
+
+.form-container {
+    position: absolute;
+    top: -2.5%;
+    right: 30px;
+    width: 400px;
+    margin-right: 40px;
+    height: 105%;
+    background-color: rgba(208, 238, 220, 0.7);
+    box-shadow: 7px 7px 3px rgb(33, 39, 35);
+}
+
+.form-container h2 {
+    font-weight: normal ;
+    padding: 30px 15px;
+    color: black;
+    font-size: 18px;
+    background-color: rgba(234, 239, 236, 0.7);
+}
+
+.form-wraper {
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.form-wraper:last-child {
+    margin-top: 30px;
+}
+
+.form-wraper:last-child p {
+    margin-top: 10px;
+}
+
+.form-container form {
+    margin-top: 8px;
+    padding: 15px;
+}
+
+.form-container form label {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.form-container form input {
+    width: 100%;
+    border: 1px solid gray;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.form-container form input[type=submit] {
+    border: 0;
+    background-color: #065842;
+    color: white;
+    font-weight: normal;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px #011812;
+}
+
+.form-container form input[type=submit]:hover {
+    background-color: #043b2d;
+}
+
+/* ---------------------------------------------------------- */
+
+/* CHAMDA --------------------------------------------------- */
+
+section.chamada {
+    text-align: center;
+    padding: 30px 0;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1280px;
+    background-color: #2F2F2F;
+}
+
+section.chamada h2 {
+    display: inline-block;
+    color: white;
+    font-size: 32px;
+    font-weight: normal;
+    width: 600px;
+    text-shadow: 3px 3px 3px #5f5f5f;
+}
+
+section.chamada p {
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    width: 620px;
+    margin-top: 5px;
+    text-shadow: 1px 1px 1px #3f3f3f;
+    
+}
+
+/* ---------------------------------------------------------- */
+
+/* MOSAICO--------------------------------------------------- */
+
+.flex-mosaico {
+    display: flex;
+    background-color: #2F2F2F;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.item1-mosaico {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30%;
+    margin: 0 auto;
+} 
+
+.item2-mosaico {
+    width: 50%;
+    color: white;
+    padding: 60px 40px;
+}
+
+.item2-mosaico p {
+    width: 80%;
+    color: white;
+    text-shadow: 1px 1px 1px #3f3f3f;
+    font-size: 18px;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+footer {
+    width: 100%;
+    background-color: #464646;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
+
+footer h5 {
+    font-size: 22px;
+    font-family: "Oswald",Verdana,Arial,sans-serif;
+    font-weight: 700;
+}
+
+footer p {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+footer h5, footer p {
+
+}
+
+@media screen and (max-width: 1440px) {
+
+    .item1-mosaico {
+        width: 90%;
+        height: 500px;
+        background-position: right;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .form-container h2 {
+        text-align: center;
+    }
+
+    .form-wraper {
+        text-align: center;
+    }
+
+    .cover-form {
+        padding: 0;
+    }
+
+    .cover-form .center {
+        padding: 15px 0;
+        height: auto;
+        text-align: center;
+    }
+
+    .form-container {
+        position: static;
+        height: auto;
+    }
+
+    .form-container {
+        margin: 0 auto;
+        float: none;
+    }
+
+    section.chamada {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .flex-mosaico {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+    }
+
+    .item1-mosaico {
+        width: 90%;
+        height: 500px;
+    }
+
+    .item2-mosaico {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    section.chamada h2 {
+        max-width: 300px;
+    }
+
+    section.chamada p {
+        margin-top: 20px;
+        max-width: 480px;
+    }
+
+    .item1-mosaico {
+        width: 90%;
+        height: 400px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 510px) {
+
+    .logo {
+        display: inline-block;
+    }
+
+    .logo:nth-child(1), .logo:nth-child(2) {
+        float: none;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    section.chamada p {
+        margin-top: 20px;
+        width: 300px;
+    }
+
+    .item1-mosaico {
+        width: 90%;
+        height: 300px;
+    }
+
+}
